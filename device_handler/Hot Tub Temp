@@ -12,6 +12,7 @@ metadata {
 
 	definition (name: "Hot Tub Temp", author: "jeremykoerber") {
     		capability "refresh"
+			capability "Temperature Measurement"
 	}
   // simulator metadata
 	simulator {
