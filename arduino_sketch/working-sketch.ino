@@ -44,6 +44,8 @@ void setup()
   }
   // Start up the sensor library
   sensors.begin();
+  // set LED to blue for initial state
+  smartthing.shieldSetLED(0, 0, 1);
 }
 
 
@@ -73,8 +75,8 @@ void loop()
       Serial.println("Turning on Hot Tub Outlet!");
       maker_trigger_contact_close();
     }
-  Serial.println("sleep 30 seconds");
-  delay(30000);
+  Serial.println("sleep 2 mins");
+  delay(2*60000);
   smartthing.send(String(sensors.getTempFByIndex(0)));
 }
 
