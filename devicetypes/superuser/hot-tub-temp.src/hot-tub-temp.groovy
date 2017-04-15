@@ -12,7 +12,7 @@ metadata {
 
 	definition (name: "Hot Tub Temp", author: "jeremykoerber") {
     		capability "refresh"
-			capability "Temperature Measurement"
+            capability "Temperature Measurement"
 	}
   // simulator metadata
 	simulator {
@@ -26,12 +26,10 @@ metadata {
 	tiles(scale: 2) {
 		valueTile("temperature", "device.temperature", width: 6, height: 6) {
 			state "val", label:'${currentValue}º', unit:"dF", icon: "st.Weather.weather2", defaultState: true, backgroundColors:[
-                [value: 90, color: "#00D2FF"],
-                [value: 100, color: "#00D2FF"],
-                [value: 101, color: "#79FE33"],
-                [value: 104, color: "#79FE33"],
-                [value: 105, color: "#F86626"],
-                [value: 109, color: "#D43927"]]
+                [value: 95, color: "#00D2FF"],
+                [value: 103, color: "#79FE33"],
+                [value: 105, color: "#fcc55b"],
+                [value: 108, color: "#D43927"]]
 		}
 		main "temperature"
 	}
