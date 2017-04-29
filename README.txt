@@ -1,0 +1,1 @@
+This is the Smartthings Device Handler for the Arduino ThingShield (Samsung)
